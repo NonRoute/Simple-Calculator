@@ -4,7 +4,6 @@
 <head>
     <title>Simple Calculator</title>
     <link href="index.css" rel="stylesheet">
-    <script src="index.js"></script>
 </head>
 
 <body>
@@ -14,33 +13,35 @@
 
     <body>
         <div class="calculator">
-            <p class="output">0</p>
+            <p class="output" id="display">0</p>
             <table>
                 <tr>
-                    <th><button type="button">1</button></th>
-                    <th><button type="button">2</button></th>
-                    <th><button type="button">3</button></th>
-                    <th><button type="button">+</button></th>
+                    <th><button type="button" onclick="num(1)">1</button></th>
+                    <th><button type="button" onclick="num(2)">2</button></th>
+                    <th><button type="button" onclick="num(3)">3</button></th>
+                    <th><button type="button" onclick="op(1)">+</button></th>
                 </tr>
                 <tr>
-                    <td><button type="button">4</button></td>
-                    <td><button type="button">5</button></td>
-                    <td><button type="button">6</button></td>
-                    <th><button type="button">-</button></th>
+                    <td><button type="button" onclick="num(4)">4</button></td>
+                    <td><button type="button" onclick="num(5)">5</button></td>
+                    <td><button type="button" onclick="num(6)">6</button></td>
+                    <th><button type="button" onclick="op(2)">-</button></th>
                 </tr>
                 <tr>
-                    <td><button type="button">7</button></td>
-                    <td><button type="button">8</button></td>
-                    <td><button type="button">9</button></td>
-                    <th><button type="button">X</button></th>
+                    <td><button type="button" onclick="num(7)">7</button></td>
+                    <td><button type="button" onclick="num(8)">8</button></td>
+                    <td><button type="button" onclick="num(9)">9</button></td>
+                    <th><button type="button" onclick="op(3)">X</button></th>
                 </tr>
                 <tr>
-                    <td><button type="button">0</button></td>
-                    <td colspan="2"><button type="button" class="button-enter">Enter</button></td>
-                    <th><button type="button">/</button></th>
+                    <td><button type="button" onclick="num(0)">0</button></td>
+                    <td colspan="2"><button type="button" class="button-enter" onclick="enter()">Enter</button></td>
+                    <th><button type="button" onclick="op(4)">/</button></th>
                 </tr>
             </table>
         </div>
+
+        <script src="index.js"></script>
     </body>
 </body>
 
