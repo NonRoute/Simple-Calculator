@@ -43,15 +43,19 @@ function enter() {
             break;
         case 1: //+
             outputEl.innerText = mem + parseFloat(outputEl.innerText)
+            calEl.textContent += " = " + outputEl.innerText
             break;
         case 2: //-
             outputEl.innerText = mem - parseFloat(outputEl.innerText)
+            calEl.textContent += " = " + outputEl.innerText
             break;
         case 3: //*
             outputEl.innerText = mem * parseFloat(outputEl.innerText)
+            calEl.textContent += " = " + outputEl.innerText
             break;
         case 4: //divide
             outputEl.innerText = (mem / parseFloat(outputEl.innerText)).toFixed(4)
+            calEl.textContent += " = " + outputEl.innerText
             break;
     }
     operation = 0
