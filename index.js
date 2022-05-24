@@ -5,7 +5,11 @@ let outputEl = document.getElementById("display")
 let calEl = document.getElementById("calculation")
 
 function num(x) {
-    outputEl.innerText = outputEl.innerText*10 + x
+    if (outputEl.innerText >= 0)
+        outputEl.innerText = parseInt(outputEl.innerText)*10 + x
+    else {
+        outputEl.innerText = parseInt(outputEl.innerText)*10 - x
+    }
     switch(operation) {
         case 0: //reset
             calEl.textContent = "History : "
